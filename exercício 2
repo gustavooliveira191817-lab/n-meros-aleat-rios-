@@ -1,0 +1,32 @@
+import java.util.Random;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Random e=new Random();
+        Scanner sc=new Scanner(System.in);
+        int sorteado = 1 + e.nextInt(50);
+        int n1 ;
+        int contador =0;
+        int total;
+        System.out.println("Chute um nuemero:");
+
+        do {
+            contador ++;
+            n1 = sc.nextInt();
+            if (n1 < sorteado) {
+                System.out.println(" O numero sorteado é MAIOR.");
+            }
+            else if (n1 > sorteado){
+                System.out.println("O numero sorteado é MENOR.");
+            }
+            else {
+                System.out.println("Acertou!!!");
+            }
+
+
+        }
+        while (n1 != sorteado);
+        System.out.println(" tentativas = "+ contador);
+        sc.close();
+    }
+}
