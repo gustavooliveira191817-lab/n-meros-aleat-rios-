@@ -1,0 +1,11 @@
+import  java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Random e=new Random();
+
+        int sorteado = 1+ e.nextInt(100+1);
+        System.out.println("o numero sorteado é "+ sorteado);
+
+
+    }
+}
