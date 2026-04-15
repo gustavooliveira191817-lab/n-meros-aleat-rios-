@@ -1,0 +1,13 @@
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Random e=new Random();
+        int sorteado = 0;
+     for ( int cont = 1 ; cont <10;cont++){
+        sorteado = 1 + e.nextInt(20);
+         System.out.println(" so nuemro escolhido é "+sorteado   );
+
+     }
+
+    }
+}
